@@ -10,8 +10,7 @@ import javax.persistence.ManyToOne;
 public class Answer {
 	
 	@Id
-	@Column(name= "answer_id")
-	
+	@Column(name= "answer_id")	
 	private int answerId;
 	
 	private String answer;

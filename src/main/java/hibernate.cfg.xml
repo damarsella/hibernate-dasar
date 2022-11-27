@@ -12,13 +12,15 @@
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
-		<property name="format_sql">true</property>	
-		
+		<property name="format_sql">true</property>			
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
 		<mapping class="com.tutor.Student" />
 		<mapping class="com.tutor.Address" />
 		<mapping class="com.map.Question" />
 		<mapping class="com.map.Answer" />
 		<mapping class="com.map1.Emp" />
 		<mapping class="com.map1.Project" />
+		
 	</session-factory>
 </hibernate-configuration>	
